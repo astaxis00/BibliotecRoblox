@@ -3,7 +3,12 @@ local GuiLibrary = {}
 -- Cria uma nova janela com o título especificado
 function GuiLibrary.new(title)
     local gui = {}
+    
+     -- Cria a gui
 
+    local ScreenGui = Instance.new("ScreenGui")
+    ScreenGui.Parent = game:GetService("CoreGui")
+    
     -- Cria a janela
     local frame = Instance.new("Frame")
     frame.Size = UDim2.new(0, 200, 0, 200)
